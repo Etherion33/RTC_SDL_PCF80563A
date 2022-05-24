@@ -1,10 +1,3 @@
+Raspberry Pi Python Library for PCF85063 RTC
 
-Raspberry Pi Python Library for PCF8563 RTC
-
-SwitchDoc Labs, LLC  August 7, 2014
-
-Clone respository and run testPCF8563.py to test
-
-More Information on www.switchdoc.com
-
-
+Code based on SwitchDoc Labs PCF8563 RTC Python Library
