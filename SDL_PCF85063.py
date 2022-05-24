@@ -60,22 +60,24 @@ def _int_to_bcd(n):
     return bcd >> 1
 
 
-class SDL_PCF8563():
+class SDL_PCF85063():
     _REG_CONTROL_1 = 0x00
     _REG_CONTROL_2 = 0x01
-    _REG_SECONDS = 0x02
-    _REG_MINUTES = 0x03
-    _REG_HOURS = 0x04
-    _REG_DAY = 0x06
-    _REG_DATE = 0x05
-    _REG_MONTH = 0x07
-    _REG_YEAR = 0x08
+    _REG_OFFSET = 0x02
+    _REG_RAM_BYTE = 0x03
+    _REG_SECONDS = 0x04
+    _REG_MINUTES = 0x05
+    _REG_HOURS = 0x06
+    _REG_DAY = 0x07
+    _REG_DATE = 0x08
+    _REG_MONTH = 0x09
+    _REG_YEAR = 0x0A
     _REG_CLK_OUT = 0x0D
-    _REG_ALARM_TIME = 0x09
-    _REG_ALARM_MINUTES = 0x09
-    _REG_ALARM_HOURS = 0x0A
-    _REG_ALARM_DAY = 0x0B
-    _REG_ALARM_WEEKDAY = 0x0B
+    _REG_ALARM_SECONDS = 0x0B
+    _REG_ALARM_MINUTES = 0x0C
+    _REG_ALARM_HOURS = 0x0D
+    _REG_ALARM_DAY = 0x0E
+    _REG_ALARM_WEEKDAY = 0x0F
 
     # Clock-out frequencies
     CLOCK_CLK_OUT_FREQ_32_DOT_768KHZ = 0x80
